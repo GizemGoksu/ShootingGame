@@ -35,7 +35,7 @@ class Target extends StatelessWidget {
                 child: Container(height: 220,width: 11,color: AppColors.black,)),
               Positioned(
                 top: 210,
-                child: const CustomImage(height: 265, width: 165, imagePath: 'assets/images/target.png')),
+                child: const CustomImage(height: 265, width: 165, imagePath: 'assets/target.png')),
               Positioned(
                 top: 313,
                 left: 25,
