@@ -1,16 +1,11 @@
 # shooting_game
 
-A new Flutter project.
+A Flutter Game.
 
-## Getting Started
+## How To Play
 
-This project is a starting point for a Flutter application.
+Shoot the target to get points! You can shoot the target while it is moving or not. 
+You can make it move or stop by clicking the button with pan tool icon.
+If you want the target move faster/slower, click the button with speed icon!
+If you want to restart the game, click restart button!
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
