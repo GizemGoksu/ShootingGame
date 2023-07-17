@@ -6,6 +6,7 @@ import 'package:shooting_game/core/extension/image_extension.dart';
 
 class Gun extends StatelessWidget {
   const Gun({super.key,required this.left});
+
   final RxDouble left;
 
   @override
@@ -14,7 +15,11 @@ class Gun extends StatelessWidget {
       () => Positioned(
         left: left.value,
         bottom: 0,
-        child: IgnorePointer(child: CustomImage(height: 200, width: 120, imagePath: ImagePaths.gun.path())),
+        child: IgnorePointer(
+          child: CustomImage(
+            height: 200,
+            width: 120,
+            imagePath: ImagePaths.gun.path())),
       ),
     );
   }

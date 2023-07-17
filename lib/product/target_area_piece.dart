@@ -18,7 +18,7 @@ class TargetAreaPiece extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: AppColors.transparent,
-      borderRadius: BorderRadius.circular(55),
+      borderRadius: generalBorderRadius,
       child: InkWell(
         onTap: () => onTap(point),
         child: Container(
@@ -30,6 +30,5 @@ class TargetAreaPiece extends StatelessWidget {
     );
   }
 
-  BoxDecoration decoration() => BoxDecoration(
-      borderRadius: BorderRadius.circular(55),color: AppColors.transparent);
+  BoxDecoration decoration() => BoxDecoration(borderRadius: generalBorderRadius,color: AppColors.transparent);
 }

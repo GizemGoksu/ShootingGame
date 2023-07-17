@@ -27,7 +27,7 @@ class CircularButton extends StatelessWidget {
                 color: color,
                 border: Border.all(
                     color: isOutlined ? AppColors.black : AppColors.transparent,
-                    width: isOutlined ? 2 : 0)
+                    width: isOutlined ? 3 : 0)
                 ),
             child: icon ?? const SizedBox.shrink(),
           ),

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-
 import '../core/base/util/base_utility.dart';
 
-class CustomText extends StatelessWidget {
-  const CustomText({super.key,
-  required this.text,});
+class OutlinedText extends StatelessWidget {
+  const OutlinedText({super.key,
+  required this.text,required this.fontSize});
 
   final String text;
+  final double fontSize;
+
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class CustomText extends StatelessWidget {
     return Text(
         text,
         style: TextStyle(
-          fontSize: 48,
+          fontSize: fontSize,
           color: AppColors.white,
         ),
       );
@@ -32,7 +33,7 @@ class CustomText extends StatelessWidget {
     return Text(
         text,
         style: TextStyle(
-          fontSize: 48,
+          fontSize: fontSize,
           foreground: Paint()
             ..style = PaintingStyle.stroke
             ..strokeWidth = 3

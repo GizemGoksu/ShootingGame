@@ -1,16 +1,16 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shooting_game/core/constants/app_const.dart';
 
 class GameController extends GetxController {
   RxInt totalPoints = 0.obs;
+
   RxBool isMoving = false.obs;
-  RxBool isLeft = true.obs;
+  RxBool isLeft = false.obs;
   RxBool isSpeedUp = false.obs;
+
   RxDouble xPosition = (50.0).obs;
-  RxDouble yPosition = (150.0).obs;
+  RxDouble yPosition = (200.0).obs;
 
   void draggingFunction(PointerMoveEvent event) {
     xPosition.value += event.delta.dx;
@@ -20,8 +20,7 @@ class GameController extends GetxController {
   void clickingScreenFunction(PointerUpEvent event) {
     xPosition.value = event.position.dx - AppConst.aimRadius;
     yPosition.value = event.position.dy - AppConst.aimRadius;
-    print(isSpeedUp.value);
-    // I substract aim radius value from event position values to make red dot in the center of aim image position the place we click.
+    // I substract aim radius value from event position values to make red dot in the center of aim position the place we click.
   }
 
   void startStopMovement() => isMoving.value = !isMoving.value;

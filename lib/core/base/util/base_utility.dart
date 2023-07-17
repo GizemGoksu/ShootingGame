@@ -12,3 +12,5 @@ class AppIcons {
   static Icon speed = Icon(Icons.speed,color: AppColors.black,size: 35,);
   static Icon restart = Icon(Icons.restart_alt,color: AppColors.black,size: 35,);
 }
+
+BorderRadius generalBorderRadius=BorderRadius.circular(55);

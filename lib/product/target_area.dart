@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shooting_game/core/constants/app_const.dart';
 import 'package:shooting_game/product/target_area_piece.dart';
 
 class TargetArea extends StatelessWidget {
@@ -18,7 +17,7 @@ class TargetArea extends StatelessWidget {
         TargetAreaPiece(height: 88, width: 70, point: 8, onTap: onTap),
         TargetAreaPiece(height: 57, width: 45, point: 9, onTap: onTap),
         TargetAreaPiece(height: 34, width: 19, point: 10, onTap: onTap),
-        ],
+      ],
     );
   }
 }

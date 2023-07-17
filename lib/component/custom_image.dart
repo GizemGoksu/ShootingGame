@@ -17,7 +17,7 @@ class CustomImage extends StatelessWidget {
     return SizedBox(
       height: height,
       width: width,
-      child: Image.asset(imagePath),
+      child: Image.asset(imagePath,fit: BoxFit.fitHeight,),
     );
   }
 }
