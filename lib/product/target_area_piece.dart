@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shooting_game/core/util/base_utility.dart';
+import 'package:shooting_game/core/base/util/base_utility.dart';
 
 class TargetAreaPiece extends StatelessWidget {
   const TargetAreaPiece(

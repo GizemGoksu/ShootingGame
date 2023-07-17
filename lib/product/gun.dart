@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shooting_game/component/custom_image.dart';
+import 'package:shooting_game/core/base/enum/image_enum.dart';
+import 'package:shooting_game/core/extension/image_extension.dart';
 
 class Gun extends StatelessWidget {
   const Gun({super.key,required this.left});
@@ -12,7 +14,7 @@ class Gun extends StatelessWidget {
       () => Positioned(
         left: left.value,
         bottom: 0,
-        child: const IgnorePointer(child: CustomImage(height: 200, width: 120, imagePath: 'assets/gun.png')),
+        child: IgnorePointer(child: CustomImage(height: 200, width: 120, imagePath: ImagePaths.gun.path())),
       ),
     );
   }
