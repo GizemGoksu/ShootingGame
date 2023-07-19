@@ -15,7 +15,6 @@ import '../product/target.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({super.key});
-  //final player = AudioPlayer();
   final GameController gameController = Get.put(GameController());
   @override
   Widget build(BuildContext context) {
